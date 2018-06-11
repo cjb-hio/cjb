@@ -8,12 +8,12 @@ WTCON 0x53000000
 .text
 .global _start
 _start:
-/*
+
 //关闭看门狗
 ldr r0, =0x53000000
 ldr r1, =0x0
 str r1, [r0]
-*/
+
 //设置sp
 ldr sp, =4*1024
 
